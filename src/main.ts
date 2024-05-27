@@ -21,20 +21,21 @@ const {
   startUrls = ["https://www.swiggy.com/city/gurgaon"],
   maxRequestsPerCrawl = 100,
 } = (await Actor.getInput<Input>()) ?? ({} as Input);
-const proxyConfiguration = await Actor.createProxyConfiguration({
-  // proxyUrls: [
-  //   `http://auto:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`,
-  // ],
-});
+// const proxyConfiguration = await Actor.createProxyConfiguration({
+//   // proxyUrls: [
+//   //   `http://auto:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`,
+//   // ],
+// });
 const requestQueue = await RequestQueue.open();
 
 const maxRetries = 5;
 
 const crawler = new CheerioCrawler({
-  proxyConfiguration,
+  // proxyConfiguration,
   maxRequestsPerCrawl,
   requestHandler: async (context: CheerioCrawlingContext) => {
     const { $, request, log, body } = context;
+
     const {
       cityName,
       isFinalRequest,
@@ -47,6 +48,7 @@ const crawler = new CheerioCrawler({
     const delayTime = 5000;
 
     try {
+      log.info(`context: ${JSON.stringify(context)}`);
       log.info(`Processing request for URL: ${request.url}`);
 
       if (initialRequest === false) {

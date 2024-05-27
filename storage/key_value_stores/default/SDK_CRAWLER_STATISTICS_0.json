@@ -2,41 +2,36 @@
   "requestsFinished": 0,
   "requestsFailed": 1,
   "requestsRetries": 1,
-  "requestsFailedPerMinute": 14,
+  "requestsFailedPerMinute": 66,
   "requestsFinishedPerMinute": 0,
   "requestMinDurationMillis": null,
   "requestMaxDurationMillis": 0,
-  "requestTotalFailedDurationMillis": 266,
+  "requestTotalFailedDurationMillis": 47,
   "requestTotalFinishedDurationMillis": 0,
-  "crawlerStartedAt": "2024-05-24T16:08:54.348Z",
-  "crawlerFinishedAt": "2024-05-24T16:08:58.615Z",
-  "statsPersistedAt": "2024-05-24T16:08:58.615Z",
-  "crawlerRuntimeMillis": 4284,
-  "crawlerLastStartTimestamp": 1716566934331,
+  "crawlerStartedAt": "2024-05-27T22:40:54.299Z",
+  "crawlerFinishedAt": "2024-05-27T22:40:55.185Z",
+  "statsPersistedAt": "2024-05-27T22:40:55.185Z",
+  "crawlerRuntimeMillis": 903,
+  "crawlerLastStartTimestamp": 1716849654282,
   "requestRetryHistogram": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     null,
     1
   ],
   "statsId": 0,
-  "requestAvgFailedDurationMillis": 266,
+  "requestAvgFailedDurationMillis": 47,
   "requestAvgFinishedDurationMillis": null,
-  "requestTotalDurationMillis": 266,
+  "requestTotalDurationMillis": 47,
   "requestsTotal": 1,
-  "requestsWithStatusCode": {},
+  "requestsWithStatusCode": {
+    "403": 4
+  },
   "errors": {
-    "D:\\Orderific\\india-swiggy-urls\\node_modules\\@crawlee\\http\\internals\\http-crawler.js:446:23": {
+    "C:\\Users\\super\\Desktop\\scraper-url\\node_modules\\@crawlee\\basic\\internals\\basic-crawler.js:698:19": {
       "missing error code": {
         "Error": {
-          "Detected a session error, rotating session... ": {
+          "Request blocked - received 403 status code.": {
             "count": 1
           }
         }
@@ -44,11 +39,11 @@
     }
   },
   "retryErrors": {
-    "D:\\Orderific\\india-swiggy-urls\\node_modules\\@crawlee\\http\\internals\\http-crawler.js:446:23": {
+    "C:\\Users\\super\\Desktop\\scraper-url\\node_modules\\@crawlee\\basic\\internals\\basic-crawler.js:698:19": {
       "missing error code": {
         "Error": {
-          "Detected a session error, rotating session... ": {
-            "count": 10
+          "Request blocked - received 403 status code.": {
+            "count": 3
           }
         }
       }
