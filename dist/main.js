@@ -2,22 +2,15 @@ import { Actor, RequestQueue } from "apify";
 import { CheerioCrawler } from "crawlee";
 await Actor.init();
 const { startUrls = ["https://www.swiggy.com/city/gurgaon"], maxRequestsPerCrawl = 100, } = (await Actor.getInput()) ?? {};
-// const proxyConfiguration = await Actor.createProxyConfiguration({
-//   // proxyUrls: [
-//   //   `http://auto:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`,
-//   // ],
-// });
 const requestQueue = await RequestQueue.open();
 const maxRetries = 5;
 const crawler = new CheerioCrawler({
-    // proxyConfiguration,
     maxRequestsPerCrawl,
     requestHandler: async (context) => {
         const { $, request, log, body } = context;
         const { cityName, isFinalRequest, offset, initialRequest, startingUrl, retryCount = 0, } = request.userData;
         const delayTime = 5000;
         try {
-            log.info(`context: ${JSON.stringify(context)}`);
             log.info(`Processing request for URL: ${request.url}`);
             if (initialRequest === false) {
                 log.info(`Offset: ${offset}`);
