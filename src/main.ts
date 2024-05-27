@@ -48,7 +48,6 @@ const crawler = new CheerioCrawler({
     const delayTime = 5000;
 
     try {
-      log.info(`context: ${JSON.stringify(context)}`);
       log.info(`Processing request for URL: ${request.url}`);
 
       if (initialRequest === false) {
