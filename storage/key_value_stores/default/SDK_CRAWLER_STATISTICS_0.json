@@ -1,0 +1,57 @@
+{
+  "requestsFinished": 0,
+  "requestsFailed": 1,
+  "requestsRetries": 1,
+  "requestsFailedPerMinute": 14,
+  "requestsFinishedPerMinute": 0,
+  "requestMinDurationMillis": null,
+  "requestMaxDurationMillis": 0,
+  "requestTotalFailedDurationMillis": 266,
+  "requestTotalFinishedDurationMillis": 0,
+  "crawlerStartedAt": "2024-05-24T16:08:54.348Z",
+  "crawlerFinishedAt": "2024-05-24T16:08:58.615Z",
+  "statsPersistedAt": "2024-05-24T16:08:58.615Z",
+  "crawlerRuntimeMillis": 4284,
+  "crawlerLastStartTimestamp": 1716566934331,
+  "requestRetryHistogram": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": 266,
+  "requestAvgFinishedDurationMillis": null,
+  "requestTotalDurationMillis": 266,
+  "requestsTotal": 1,
+  "requestsWithStatusCode": {},
+  "errors": {
+    "D:\\Orderific\\india-swiggy-urls\\node_modules\\@crawlee\\http\\internals\\http-crawler.js:446:23": {
+      "missing error code": {
+        "Error": {
+          "Detected a session error, rotating session... ": {
+            "count": 1
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "D:\\Orderific\\india-swiggy-urls\\node_modules\\@crawlee\\http\\internals\\http-crawler.js:446:23": {
+      "missing error code": {
+        "Error": {
+          "Detected a session error, rotating session... ": {
+            "count": 10
+          }
+        }
+      }
+    }
+  }
+}
