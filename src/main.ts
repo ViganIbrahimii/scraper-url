@@ -45,11 +45,6 @@ const crawler = new CheerioCrawler({
     const delayTime = 5000;
 
     try {
-      console.log(request, "request");
-      console.log("ahhahahahaahsbgo;dsogbsad b", context);
-      log.info(`Processing request for URL: ${request.url}`);
-      console.log(initialRequest, "initialrequest");
-
       if (initialRequest === false) {
         log.info(`Offset: ${offset}`);
 
